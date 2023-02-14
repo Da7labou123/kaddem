@@ -22,4 +22,5 @@ public class Etudiant implements Serializable {
     private Department department;
     @ManyToMany(mappedBy = "etudiants")
     private List<Equipe> equipes;
+
 }

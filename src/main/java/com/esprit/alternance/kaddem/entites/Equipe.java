@@ -20,4 +20,5 @@ public class Equipe implements Serializable
     private List<Etudiant> etudiants;
     @OneToOne(mappedBy = "equipe")
     private DetailEquipe detailEquipe;
+
 }

@@ -21,4 +21,5 @@ public class Contrat implements Serializable {
     private Integer montantContrat;
     @ManyToOne()
     private Etudiant etudiant;
+
 }

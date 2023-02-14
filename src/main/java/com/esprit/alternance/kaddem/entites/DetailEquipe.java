@@ -15,4 +15,5 @@ public class DetailEquipe implements Serializable {
     private String thematique;
     @OneToOne()
     private Equipe equipe;
+
 }

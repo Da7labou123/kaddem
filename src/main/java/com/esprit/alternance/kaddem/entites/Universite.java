@@ -15,5 +15,4 @@ public class Universite implements Serializable {
     private List<Department> departments;
 
 
-
 }
