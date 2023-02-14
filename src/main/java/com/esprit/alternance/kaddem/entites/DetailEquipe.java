@@ -13,5 +13,6 @@ public class DetailEquipe implements Serializable {
 
     private String salle;
     private String thematique;
-
+    @OneToOne()
+    private Equipe equipe;
 }

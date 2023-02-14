@@ -3,7 +3,6 @@ package com.esprit.alternance.kaddem.entites;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
-
 @Entity
 
 public class Contrat implements Serializable {
@@ -20,5 +19,6 @@ public class Contrat implements Serializable {
     private Specialite specialite;
     private Boolean archive;
     private Integer montantContrat;
-
+    @ManyToOne()
+    private Etudiant etudiant;
 }

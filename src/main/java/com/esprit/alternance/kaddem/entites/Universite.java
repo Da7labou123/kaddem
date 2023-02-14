@@ -2,6 +2,7 @@ package com.esprit.alternance.kaddem.entites;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 public class Universite implements Serializable {
@@ -9,7 +10,9 @@ public class Universite implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idUniv", nullable = false)
     private Long idUnive;
-private String nomUniversite;
+    private String nomUniversite;
+    @OneToMany()
+    private List<Department> departments;
 
 
 

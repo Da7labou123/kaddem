@@ -2,6 +2,8 @@ package com.esprit.alternance.kaddem.entites;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
+
 @Entity
 public class Department implements Serializable {
     @Id
@@ -10,6 +12,8 @@ public class Department implements Serializable {
     private Long idDepartment;
 
     private String nameDepartment;
+    @OneToMany(mappedBy = "department")
+    private List<Etudiant> etudiants;
 
 
 }
