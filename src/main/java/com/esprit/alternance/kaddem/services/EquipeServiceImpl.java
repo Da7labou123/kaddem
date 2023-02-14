@@ -38,4 +38,5 @@ public class EquipeServiceImpl implements IEquipeService {
     public void deleteEquipe(Equipe equipe) {
         equipeRepository.delete(equipe);
     }
+
 }
